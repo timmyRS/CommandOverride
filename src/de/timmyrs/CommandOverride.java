@@ -65,16 +65,9 @@ public class CommandOverride extends JavaPlugin implements Listener, CommandExec
 	@Override
 	public boolean onCommand(CommandSender s, Command c, String l, String[] a)
 	{
-		if(s.hasPermission("commandoverride.reload"))
-		{
-			reloadConfig();
-			reloadCommands();
-			s.sendMessage("§aCommandOverride commands have been reloaded!");
-		}
-		else
-		{
-			s.sendMessage("§cYou're not authorized to access this command.");
-		}
+		reloadConfig();
+		reloadCommands();
+		s.sendMessage("§aCommandOverride commands have been reloaded!");
 		return true;
 	}
 

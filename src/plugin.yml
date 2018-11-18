@@ -1,15 +1,14 @@
 ---
 name: CommandOverride
-version: 1.0
+version: 1.0.1
 main: de.timmyrs.CommandOverride
 author: timmyRS
 website: https://timmyrs.de
 
 commands:
   reloadcommands:
-    description: Reloads the CommandOverride configuration.
+    permission: commandoverride.reload
 
 permissions:
   commandoverride.reload:
     default: 'op'
-    description: Grants access to /reloadcommands
